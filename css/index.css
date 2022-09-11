@@ -1,0 +1,85 @@
+/*
+    This is the Root CSS file for the site.
+    It is included in every page.
+*/
+:root {
+    --text-color: #ddd;
+    --background-color: #222;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Color */
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    --background-color: #333;
+    --current-page-color: #555;
+    --hover-text-color: #fff;
+
+    display: inline-block;
+    max-height: 45px;
+    width: 100%;
+
+    /* Color */
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.navbar #title {
+    float: left;
+
+    padding: 6px 10px;
+}
+
+.navbar ul {
+    margin: 0 auto;
+    padding: 0;
+    width: fit-content;
+
+    list-style-type: none;
+    overflow: auto;
+    display: flex;
+    border: none;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+
+.navbar li {
+    float: left;
+    max-width: 200px;
+}
+
+.navbar li a {
+    display: flex;
+    text-decoration: none;
+
+    padding: 10px 15px;
+    background-color: inherit;
+}
+
+.navbar li#current {
+    /* Color */
+    background-color: var(--current-page-color);
+}
+
+.navbar li a:hover {
+    /* Color */
+    color: var(--hover-text-color);
+}
+
+.main {
+    margin: 0px 5px;
+}
